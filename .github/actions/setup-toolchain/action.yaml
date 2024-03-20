@@ -1,0 +1,31 @@
+name: Setup toolchain
+
+description: Setup toolchain
+
+runs:
+  using: composite
+  steps:
+    - uses: jdx/mise-action@v2
+      with:
+        install: false
+        experimental: true
+    - id: detect-toolchain-versions
+      shell: bash
+      run: echo "node=$(mise current node)" >> "$GITHUB_OUTPUT"
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ steps.detect-toolchain-versions.outputs.node }}
+    - shell: bash
+      run: corepack enable
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ steps.detect-toolchain-versions.outputs.node }}
+        registry-url: https://registry.npmjs.org
+        cache: pnpm
+    - uses: actions/cache@v4
+      with:
+        path: .turbo/cache
+        key: turbo-${{ runner.os }}-${{ github.sha }}
+        restore-keys: turbo-${{ runner.os }}-
+    - shell: bash
+      run: echo "TURBO_CACHE_DIR=$(pwd)/.turbo/cache" >> $GITHUB_ENV
