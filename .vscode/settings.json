@@ -1,7 +1,7 @@
 {
 	"cSpell.allowCompoundWords": true,
 	"cSpell.enabled": true,
-	"cSpell.ignoreWords": ["mozisan", "tibdex"],
+	"cSpell.ignoreWords": ["mozisan", "stefanzweifel", "tibdex"],
 	"cSpell.words": ["clsx", "knip"],
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit"
