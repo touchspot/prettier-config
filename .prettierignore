@@ -1,3 +1,4 @@
 dist/
 *-lock.*
 .release-please-manifest.json
+CHANGELOG.md
