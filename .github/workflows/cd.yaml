@@ -1,0 +1,43 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      releases-created: ${{ steps.release.outputs.releases_created }}
+    steps:
+      - id: generate-token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.TOUCHSPOT_GITHUB_APP_ID }}
+          private_key: ${{ secrets.TOUCHSPOT_GITHUB_APP_PRIVATE_KEY }}
+      - id: release
+        uses: google-github-actions/release-please-action@v4
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+
+  publish:
+    name: Publish
+    needs: [release]
+    if: ${{ needs.release.outputs.releases-created == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-toolchain
+      - run: pnpm install --frozen-lockfile
+      - run: mise run build
+      - run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
