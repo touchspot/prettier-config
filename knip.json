@@ -1,0 +1,6 @@
+{
+	"$schema": "node_modules/knip/schema.json",
+	"entry": ["src/*.ts"],
+	"include": ["dependencies", "exports", "files", "types"],
+	"ignoreDependencies": [".*prettier.*", "turbo"]
+}
