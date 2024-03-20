@@ -1,0 +1,33 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["*-lock.*"],
+	"pipeline": {
+		"build": {
+			"inputs": ["src/**/*.ts", "package.json", "tsconfig.json"],
+			"outputs": ["dist/**"]
+		},
+		"check:format": {
+			"dependsOn": ["build"],
+			"outputs": []
+		},
+		"check:lint": {
+			"inputs": ["src/**/*.ts", ".eslint*", "tsconfig.json"],
+			"outputs": []
+		},
+		"check:type": {
+			"inputs": ["src/**/*.ts", "tsconfig.json"],
+			"outputs": []
+		},
+		"check:unused": {
+			"inputs": ["src/**/*.ts", "knip.json", "tsconfig.json"],
+			"outputs": []
+		},
+		"fix:format": {
+			"dependsOn": ["build"],
+			"cache": false
+		},
+		"fix:lint": {
+			"cache": false
+		}
+	}
+}

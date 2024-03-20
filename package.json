@@ -1,0 +1,74 @@
+{
+	"name": "@touchspot/prettier-config",
+	"version": "0.0.0",
+	"homepage": "https://github.com/touchspot/prettier-config#readme",
+	"bugs": "https://github.com/touchspot/prettier-config/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/touchspot/prettier-config.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "mozisan",
+		"email": "mozisan@users.noreply.github.com"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/default.js",
+			"require": "./dist/default.cjs"
+		},
+		"./tailwindcss": {
+			"import": "./dist/tailwindcss.js",
+			"require": "./dist/tailwindcss.cjs"
+		}
+	},
+	"main": "./dist/default.cjs",
+	"module": "./dist/default.js",
+	"files": [
+		"dist",
+		"package.json"
+	],
+	"scripts": {
+		"build": "pkgroll",
+		"check:format": "prettier --check .",
+		"check:lint": "eslint .",
+		"check:type": "tsc --noEmit",
+		"check:unused": "knip",
+		"fix:format": "prettier --write --log-level=warn .",
+		"fix:lint": "eslint --fix .",
+		"prepare": "husky install"
+	},
+	"prettier": "./dist/default.js",
+	"dependencies": {
+		"prettier-plugin-packagejson": "^2.4.12",
+		"prettier-plugin-tailwindcss": "^0.5.12",
+		"prettier-plugin-toml": "^2.0.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.2.1",
+		"@commitlint/config-conventional": "^19.1.0",
+		"@commitlint/config-pnpm-scopes": "^19.1.0",
+		"@commitlint/cz-commitlint": "^19.2.0",
+		"@touchspot/eslint-plugin": "^1.0.0",
+		"@tsconfig/node20": "^20.1.2",
+		"@tsconfig/strictest": "^2.0.3",
+		"commitizen": "^4.3.0",
+		"eslint": "^8.57.0",
+		"husky": "^9.0.11",
+		"inquirer": "^9.2.16",
+		"knip": "^5.1.5",
+		"lint-staged": "^15.2.2",
+		"pkgroll": "^2.0.2",
+		"prettier": "^3.2.5",
+		"turbo": "^1.12.5",
+		"typescript": "^5.4.2"
+	},
+	"peerDependencies": {
+		"prettier": "^3"
+	},
+	"packageManager": "pnpm@8.15.5",
+	"publishConfig": {
+		"access": "public"
+	}
+}
