@@ -3,5 +3,8 @@
 		"@tsconfig/node20/tsconfig.json",
 		"@tsconfig/strictest/tsconfig.json"
 	],
-	"include": ["src"]
+	"compilerOptions": {
+		"noEmit": true
+	},
+	"include": ["src", "*.js"]
 }
