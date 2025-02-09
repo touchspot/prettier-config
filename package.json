@@ -41,34 +41,34 @@
 	},
 	"prettier": "./dist/default.js",
 	"dependencies": {
-		"prettier-plugin-packagejson": "^2.5.2",
-		"prettier-plugin-tailwindcss": "^0.6.6",
+		"prettier-plugin-packagejson": "^2.5.8",
+		"prettier-plugin-tailwindcss": "^0.6.11",
 		"prettier-plugin-toml": "^2.0.1"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.5.0",
-		"@commitlint/config-conventional": "^19.5.0",
+		"@commitlint/cli": "^19.7.1",
+		"@commitlint/config-conventional": "^19.7.1",
 		"@commitlint/config-pnpm-scopes": "^19.5.0",
-		"@commitlint/cz-commitlint": "^19.5.0",
-		"@touchspot/eslint-config": "^1.0.4",
+		"@commitlint/cz-commitlint": "^19.6.1",
+		"@touchspot/eslint-config": "^1.5.6",
 		"@tsconfig/node20": "^20.1.4",
 		"@tsconfig/strictest": "^2.0.5",
-		"@types/node": "^20.16.5",
-		"commitizen": "^4.3.0",
-		"eslint": "^9.10.0",
-		"husky": "^9.1.6",
+		"@types/node": "^22.13.1",
+		"commitizen": "^4.3.1",
+		"eslint": "^9.20.0",
+		"husky": "^9.1.7",
 		"inquirer": "^9.3.6",
-		"knip": "^5.30.2",
-		"lint-staged": "^15.2.10",
-		"pkgroll": "^2.5.0",
-		"prettier": "^3.3.3",
-		"turbo": "^2.1.2",
-		"typescript": "^5.6.2"
+		"knip": "^5.43.6",
+		"lint-staged": "^15.4.3",
+		"pkgroll": "^2.8.2",
+		"prettier": "^3.5.0",
+		"turbo": "^2.4.0",
+		"typescript": "^5.7.3"
 	},
 	"peerDependencies": {
-		"prettier": "^3"
+		"prettier": "^3.5.0"
 	},
-	"packageManager": "pnpm@9.10.0",
+	"packageManager": "pnpm@10.2.1",
 	"publishConfig": {
 		"access": "public"
 	}
