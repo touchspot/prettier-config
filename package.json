@@ -53,7 +53,7 @@
 		"@touchspot/eslint-config": "^1.0.4",
 		"@tsconfig/node20": "^20.1.4",
 		"@tsconfig/strictest": "^2.0.5",
-		"@types/node": "^20.16.5",
+		"@types/node": "^22.13.1",
 		"commitizen": "^4.3.0",
 		"eslint": "^9.10.0",
 		"husky": "^9.1.6",
