@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/touchspot/prettier-config/compare/v1.0.1...v1.1.0) (2025-02-09)
+
+
+### Features
+
+* set `experimentalOperatorPosition` to `start` ([5774cf9](https://github.com/touchspot/prettier-config/commit/5774cf96837d97178fffded25b7efad73cd1bc1b))
+* upgrade prettier to `3.5.0` ([fdd69b1](https://github.com/touchspot/prettier-config/commit/fdd69b17e67218064b96903b7304f7c43e5a43c7))
+
 ## [1.0.1](https://github.com/touchspot/prettier-config/compare/v1.0.0...v1.0.1) (2024-09-16)
 
 
