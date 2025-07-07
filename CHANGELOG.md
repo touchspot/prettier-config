@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/touchspot/prettier-config/compare/v1.1.0...v2.0.0) (2025-07-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* This package is now ESM-only.
+
+### Features
+
+* drop CommonJS support and migrate to ESM-only ([3599e3c](https://github.com/touchspot/prettier-config/commit/3599e3c379f399b69de6c1ffed07c9e8416365b3))
+
 ## [1.1.0](https://github.com/touchspot/prettier-config/compare/v1.0.1...v1.1.0) (2025-02-09)
 
 
