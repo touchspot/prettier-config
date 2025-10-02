@@ -2,6 +2,8 @@ min_version = "2025.2.3"
 
 [tools]
 node = "22.20.0"
+claude = "2.0.1"
+"npm:ccusage" = "17.1.1"
 
 [env]
 _.path = ["./node_modules/.bin"]

@@ -31,7 +31,7 @@
 		"fix:lint": "eslint --fix .",
 		"prepare": "husky"
 	},
-	"prettier": "./dist/default.js",
+	"prettier": "./src/default.ts",
 	"dependencies": {
 		"prettier-plugin-packagejson": "^2.5.18",
 		"prettier-plugin-tailwindcss": "^0.6.13",
