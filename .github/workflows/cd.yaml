@@ -33,11 +33,12 @@ jobs:
     needs: [release]
     if: ${{ needs.release.outputs.releases-created == 'true' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-toolchain
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec turbo run build
       - run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
