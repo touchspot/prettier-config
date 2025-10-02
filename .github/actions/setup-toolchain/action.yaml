@@ -5,21 +5,10 @@ description: Setup toolchain
 runs:
   using: composite
   steps:
-    - uses: jdx/mise-action@v2
-      with:
-        install: false
-        experimental: true
-    - id: detect-toolchain-versions
-      shell: bash
-      run: echo "node=$(mise current node)" >> "$GITHUB_OUTPUT"
+    - uses: pnpm/action-setup@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: ${{ steps.detect-toolchain-versions.outputs.node }}
-    - shell: bash
-      run: npm install --global --force corepack && corepack enable
-    - uses: actions/setup-node@v4
-      with:
-        node-version: ${{ steps.detect-toolchain-versions.outputs.node }}
+        node-version-file: .node-version
         registry-url: https://registry.npmjs.org
         cache: pnpm
     - uses: actions/cache@v4

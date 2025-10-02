@@ -1,7 +1,9 @@
 min_version = "2025.2.3"
 
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+
 [tools]
-node = "22.20.0"
 claude = "2.0.1"
 "npm:ccusage" = "17.1.1"
 
