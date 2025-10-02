@@ -9,18 +9,18 @@ importers:
   .:
     dependencies:
       prettier-plugin-packagejson:
-        specifier: ^2.5.18
-        version: 2.5.18(prettier@3.6.2)
+        specifier: ^2.5.19
+        version: 2.5.19(prettier@3.6.2)
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.13
-        version: 0.6.13(prettier@3.6.2)
+        specifier: ^0.6.14
+        version: 0.6.14(prettier@3.6.2)
       prettier-plugin-toml:
-        specifier: ^2.0.5
-        version: 2.0.5(prettier@3.6.2)
+        specifier: ^2.0.6
+        version: 2.0.6(prettier@3.6.2)
     devDependencies:
       '@commitlint/cli':
         specifier: ^20.1.0
-        version: 20.1.0(@types/node@22.16.0)(typescript@5.9.3)
+        version: 20.1.0(@types/node@22.18.8)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: ^20.0.0
         version: 20.0.0
@@ -40,11 +40,11 @@ importers:
         specifier: ^2.0.6
         version: 2.0.6
       '@types/node':
-        specifier: ^22.16.0
-        version: 22.16.0
+        specifier: ^22.18.8
+        version: 22.18.8
       commitizen:
         specifier: ^4.3.1
-        version: 4.3.1(@types/node@22.16.0)(typescript@5.9.3)
+        version: 4.3.1(@types/node@22.18.8)(typescript@5.9.3)
       cz-git:
         specifier: ^1.12.0
         version: 1.12.0
@@ -56,7 +56,7 @@ importers:
         version: 9.1.7
       knip:
         specifier: ^5.64.1
-        version: 5.64.1(@types/node@22.16.0)(typescript@5.9.3)
+        version: 5.64.1(@types/node@22.18.8)(typescript@5.9.3)
       lint-staged:
         specifier: ^16.2.3
         version: 16.2.3
@@ -197,20 +197,12 @@ packages:
     resolution: {integrity: sha512-GA3RRcX0YJNW3WxMTMvpiIFPe0O/rfTGyfst5H6RyFExy2ayJSJi8YzEyYnjkjz/L1upiiu1v1MHdRNdQTZlaA==}
     engines: {node: '>=v18'}
 
-  '@commitlint/config-validator@19.8.1':
-    resolution: {integrity: sha512-0jvJ4u+eqGPBIzzSdqKNX1rvdbSU1lPNYlfQQRIFnBgLy26BtC0cFnr7c/AyuzExMxWsMOte6MkTi9I3SQ3iGQ==}
-    engines: {node: '>=v18'}
-
   '@commitlint/config-validator@20.0.0':
     resolution: {integrity: sha512-BeyLMaRIJDdroJuYM2EGhDMGwVBMZna9UiIqV9hxj+J551Ctc6yoGuGSmghOy/qPhBSuhA6oMtbEiTmxECafsg==}
     engines: {node: '>=v18'}
 
   '@commitlint/ensure@20.0.0':
     resolution: {integrity: sha512-WBV47Fffvabe68n+13HJNFBqiMH5U1Ryls4W3ieGwPC0C7kJqp3OVQQzG2GXqOALmzrgAB+7GXmyy8N9ct8/Fg==}
-    engines: {node: '>=v18'}
-
-  '@commitlint/execute-rule@19.8.1':
-    resolution: {integrity: sha512-YfJyIqIKWI64Mgvn/sE7FXvVMQER/Cd+s3hZke6cI1xgNT/f6ZAz5heND0QtffH+KbcqAwXDEE1/5niYayYaQA==}
     engines: {node: '>=v18'}
 
   '@commitlint/execute-rule@20.0.0':
@@ -229,10 +221,6 @@ packages:
     resolution: {integrity: sha512-kWrX8SfWk4+4nCexfLaQT3f3EcNjJwJBsSZ5rMBw6JCd6OzXufFHgel2Curos4LKIxwec9WSvs2YUD87rXlxNQ==}
     engines: {node: '>=v18'}
 
-  '@commitlint/load@19.8.1':
-    resolution: {integrity: sha512-9V99EKG3u7z+FEoe4ikgq7YGRCSukAcvmKQuTtUyiYPnOd9a2/H9Ak1J9nJA1HChRQp9OA/sIKPugGS+FK/k1A==}
-    engines: {node: '>=v18'}
-
   '@commitlint/load@20.1.0':
     resolution: {integrity: sha512-qo9ER0XiAimATQR5QhvvzePfeDfApi/AFlC1G+YN+ZAY8/Ua6IRrDrxRvQAr+YXUKAxUsTDSp9KXeXLBPsNRWg==}
     engines: {node: '>=v18'}
@@ -249,10 +237,6 @@ packages:
     resolution: {integrity: sha512-Ti7Y7aEgxsM1nkwA4ZIJczkTFRX/+USMjNrL9NXwWQHqNqrBX2iMi+zfuzZXqfZ327WXBjdkRaytJ+z5vNqTOA==}
     engines: {node: '>=v18'}
 
-  '@commitlint/resolve-extends@19.8.1':
-    resolution: {integrity: sha512-GM0mAhFk49I+T/5UCYns5ayGStkTt4XFFrjjf0L4S26xoMTSkdCf9ZRO8en1kuopC4isDFuEm7ZOm/WRVeElVg==}
-    engines: {node: '>=v18'}
-
   '@commitlint/resolve-extends@20.1.0':
     resolution: {integrity: sha512-cxKXQrqHjZT3o+XPdqDCwOWVFQiae++uwd9dUBC7f2MdV58ons3uUvASdW7m55eat5sRiQ6xUHyMWMRm6atZWw==}
     engines: {node: '>=v18'}
@@ -267,10 +251,6 @@ packages:
 
   '@commitlint/top-level@20.0.0':
     resolution: {integrity: sha512-drXaPSP2EcopukrUXvUXmsQMu3Ey/FuJDc/5oiW4heoCfoE5BdLQyuc7veGeE3aoQaTVqZnh4D5WTWe2vefYKg==}
-    engines: {node: '>=v18'}
-
-  '@commitlint/types@19.8.1':
-    resolution: {integrity: sha512-/yCrWGCoA1SVKOks25EGadP9Pnj0oAIHGpl2wH2M2Y46dPM2ueb8wyCVOD7O3WCTkaJ0IkKvzhl1JY7+uCT2Dw==}
     engines: {node: '>=v18'}
 
   '@commitlint/types@20.0.0':
@@ -660,10 +640,6 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@pkgr/core@0.2.7':
-    resolution: {integrity: sha512-YLT9Zo3oNPJoBjBc4q8G2mjU4tqIbf5CEOORbUUr48dCD9q3umJ3IPlVqOqDakPfd2HuwccBaqlGhN4Gmr5OWg==}
-    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
   '@pkgr/core@0.2.9':
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
@@ -911,8 +887,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@22.16.0':
-    resolution: {integrity: sha512-B2egV9wALML1JCpv3VQoQ+yesQKAmNMBIAY7OteVrikcOcAkWm+dGL6qpeCktPjAv6N1JLnhbNiqS35UpFyBsQ==}
+  '@types/node@22.18.8':
+    resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -1253,10 +1229,6 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
   chalk@5.6.2:
     resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
@@ -1471,8 +1443,8 @@ packages:
     resolution: {integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==}
     engines: {node: '>=8'}
 
-  detect-indent@7.0.1:
-    resolution: {integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==}
+  detect-indent@7.0.2:
+    resolution: {integrity: sha512-y+8xyqdGLL+6sh0tVeHcfP/QDd8gUgbasolJJpY7NgeQGSZ739bDtSiaiDgtoicy+mtYB81dKLxO9xRhCyIB3A==}
     engines: {node: '>=12.20'}
 
   detect-newline@4.0.1:
@@ -1524,8 +1496,8 @@ packages:
     resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
     engines: {node: '>=18'}
 
-  error-ex@1.3.2:
-    resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
+  error-ex@1.3.4:
+    resolution: {integrity: sha512-sqQamAnR14VgCr1A618A3sGrygcpK+HEbenA/HiEAkkUwcZIIB/tgWqHFxWgOyDh4nB4JCRimh79dR5Ywc9MDQ==}
 
   es-abstract@1.24.0:
     resolution: {integrity: sha512-WSzPgsdLtTcQwm4CROfS5ju2Wa1QQcVeT37jFjYzdFz1r9ahadC8B8/a4qxJxM+09F18iumCdRmlr96ZYkQvEg==}
@@ -1759,22 +1731,14 @@ packages:
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
-  fast-uri@3.0.6:
-    resolution: {integrity: sha512-Atfo14OibSv5wAp4VWNsFYE1AchQRTv9cBGWET4pZWHzYshFSS9NQI6I57rdKn9croWVMbYFbLhJ+yJvmZIIHw==}
+  fast-uri@3.1.0:
+    resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
   fd-package-json@2.0.0:
     resolution: {integrity: sha512-jKmm9YtsNXN789RS/0mSzOC1NUq9mkVd65vbSSVsKdjGvYXBuE4oWe2QOEoFeRmJg+lPuZxpmrfFclNhoRMneQ==}
-
-  fdir@6.4.6:
-    resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
 
   fdir@6.5.0:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
@@ -2015,9 +1979,6 @@ packages:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
 
-  import-meta-resolve@4.1.0:
-    resolution: {integrity: sha512-I6fiaX09Xivtk+THaMfAwnA3MVA5Big1WHF1Dfx9hFuvNIWpXnorlkzhcQf6ehrqQiiZECRt1poOAkPmer3ruw==}
-
   import-meta-resolve@4.2.0:
     resolution: {integrity: sha512-Iqv2fzaTQN28s/FwZAoFq0ZSs/7hMAHJVX+w8PZl3cY19Pxk6jFFalxQoIfW2826i/fDLXv8IiEZRIT0lDuWcg==}
 
@@ -2233,10 +2194,6 @@ packages:
     resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
     hasBin: true
 
-  jiti@2.4.2:
-    resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
-    hasBin: true
-
   jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
@@ -2278,8 +2235,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  jsonfile@6.1.0:
-    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+  jsonfile@6.2.0:
+    resolution: {integrity: sha512-FGuPw30AdOIUTRMC2OMRtQV+jkVj2cfPqSeWXv1NEAJ1qZ5zb1X6z1mFhbfOB/iy3ssJCD+3KuZ8r8C3uVFlAg==}
 
   jsonparse@1.3.1:
     resolution: {integrity: sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==}
@@ -2604,10 +2561,6 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  picomatch@4.0.2:
-    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
-    engines: {node: '>=12'}
-
   picomatch@4.0.3:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
@@ -2694,19 +2647,21 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-packagejson@2.5.18:
-    resolution: {integrity: sha512-NKznPGcGrcj4NPGxnh+w78JXPyfB6I4RQSCM0v+CAXwpDG7OEpJQ5zMyfC5NBgKH1k7Skwcj5ak5by2mrHvC5g==}
+  prettier-plugin-packagejson@2.5.19:
+    resolution: {integrity: sha512-Qsqp4+jsZbKMpEGZB1UP1pxeAT8sCzne2IwnKkr+QhUe665EXUo3BAvTf1kAPCqyMv9kg3ZmO0+7eOni/C6Uag==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
       prettier:
         optional: true
 
-  prettier-plugin-tailwindcss@0.6.13:
-    resolution: {integrity: sha512-uQ0asli1+ic8xrrSmIOaElDu0FacR4x69GynTh2oZjFY10JUt6EEumTQl5tB4fMeD6I1naKd+4rXQQ7esT2i1g==}
+  prettier-plugin-tailwindcss@0.6.14:
+    resolution: {integrity: sha512-pi2e/+ZygeIqntN+vC573BcW5Cve8zUB0SSAGxqpB4f96boZF4M3phPVoOFCeypwkpRYdi7+jQ5YJJUwrkGUAg==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-hermes': '*'
+      '@prettier/plugin-oxc': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
       '@trivago/prettier-plugin-sort-imports': '*'
@@ -2725,6 +2680,10 @@ packages:
       prettier-plugin-svelte: '*'
     peerDependenciesMeta:
       '@ianvs/prettier-plugin-sort-imports':
+        optional: true
+      '@prettier/plugin-hermes':
+        optional: true
+      '@prettier/plugin-oxc':
         optional: true
       '@prettier/plugin-pug':
         optional: true
@@ -2757,8 +2716,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier-plugin-toml@2.0.5:
-    resolution: {integrity: sha512-WjXXKQyY4TdXWHU1v73UJxK/oDLSppf+b9KrSVl2kC4ZOr9CIVPKTQ/JxttgbYMaH8r3ihw7WYhMpI1EFa1obg==}
+  prettier-plugin-toml@2.0.6:
+    resolution: {integrity: sha512-12N/wBuHa9jd/KVy9pRP20NMKxQfQLMseQCt66lIbLaPLItvGUcSIryE1eZZMJ7loSws6Ig3M2Elc2EreNh76w==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.3
@@ -3077,10 +3036,6 @@ packages:
     resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  synckit@0.11.8:
-    resolution: {integrity: sha512-+XZ+r1XGIJGeQk3VvXhT6xx/VpbHsRzsTkGgF6E5RX9TTXD0118l87puaEBZ566FhqblC6U0d4XnubznJDm30A==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-
   tailwind-csstree@0.1.4:
     resolution: {integrity: sha512-FzD187HuFIZEyeR7Xy6sJbJll2d4SybS90satC8SKIuaNRC05CxMvdzN7BUsfDQffcnabckRM5OIcfArjsZ0mg==}
     engines: {node: '>=18.18'}
@@ -3110,10 +3065,6 @@ packages:
 
   tinyexec@1.0.1:
     resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
-
-  tinyglobby@0.2.14:
-    resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
-    engines: {node: '>=12.0.0'}
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -3509,11 +3460,11 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@commitlint/cli@20.1.0(@types/node@22.16.0)(typescript@5.9.3)':
+  '@commitlint/cli@20.1.0(@types/node@22.18.8)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.0.0
       '@commitlint/lint': 20.0.0
-      '@commitlint/load': 20.1.0(@types/node@22.16.0)(typescript@5.9.3)
+      '@commitlint/load': 20.1.0(@types/node@22.18.8)(typescript@5.9.3)
       '@commitlint/read': 20.0.0
       '@commitlint/types': 20.0.0
       tinyexec: 1.0.1
@@ -3533,12 +3484,6 @@ snapshots:
       fast-glob: 3.3.3
       read-yaml-file: 2.1.0
 
-  '@commitlint/config-validator@19.8.1':
-    dependencies:
-      '@commitlint/types': 19.8.1
-      ajv: 8.17.1
-    optional: true
-
   '@commitlint/config-validator@20.0.0':
     dependencies:
       '@commitlint/types': 20.0.0
@@ -3552,9 +3497,6 @@ snapshots:
       lodash.snakecase: 4.1.1
       lodash.startcase: 4.4.0
       lodash.upperfirst: 4.3.1
-
-  '@commitlint/execute-rule@19.8.1':
-    optional: true
 
   '@commitlint/execute-rule@20.0.0': {}
 
@@ -3575,24 +3517,7 @@ snapshots:
       '@commitlint/rules': 20.0.0
       '@commitlint/types': 20.0.0
 
-  '@commitlint/load@19.8.1(@types/node@22.16.0)(typescript@5.9.3)':
-    dependencies:
-      '@commitlint/config-validator': 19.8.1
-      '@commitlint/execute-rule': 19.8.1
-      '@commitlint/resolve-extends': 19.8.1
-      '@commitlint/types': 19.8.1
-      chalk: 5.4.1
-      cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.16.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
-    transitivePeerDependencies:
-      - '@types/node'
-      - typescript
-    optional: true
-
-  '@commitlint/load@20.1.0(@types/node@22.16.0)(typescript@5.9.3)':
+  '@commitlint/load@20.1.0(@types/node@22.18.8)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.0.0
       '@commitlint/execute-rule': 20.0.0
@@ -3600,7 +3525,7 @@ snapshots:
       '@commitlint/types': 20.0.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.16.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.18.8)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -3624,16 +3549,6 @@ snapshots:
       minimist: 1.2.8
       tinyexec: 1.0.1
 
-  '@commitlint/resolve-extends@19.8.1':
-    dependencies:
-      '@commitlint/config-validator': 19.8.1
-      '@commitlint/types': 19.8.1
-      global-directory: 4.0.1
-      import-meta-resolve: 4.1.0
-      lodash.mergewith: 4.6.2
-      resolve-from: 5.0.0
-    optional: true
-
   '@commitlint/resolve-extends@20.1.0':
     dependencies:
       '@commitlint/config-validator': 20.0.0
@@ -3656,16 +3571,10 @@ snapshots:
     dependencies:
       find-up: 7.0.0
 
-  '@commitlint/types@19.8.1':
-    dependencies:
-      '@types/conventional-commits-parser': 5.0.1
-      chalk: 5.4.1
-    optional: true
-
   '@commitlint/types@20.0.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
-      chalk: 5.4.1
+      chalk: 5.6.2
 
   '@emnapi/core@1.5.0':
     dependencies:
@@ -3958,8 +3867,6 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pkgr/core@0.2.7': {}
-
   '@pkgr/core@0.2.9': {}
 
   '@pnpm/constants@7.1.1': {}
@@ -4173,13 +4080,13 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.16.0
+      '@types/node': 22.18.8
 
   '@types/estree@1.0.8': {}
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@22.16.0':
+  '@types/node@22.18.8':
     dependencies:
       undici-types: 6.21.0
 
@@ -4358,7 +4265,7 @@ snapshots:
   ajv@8.17.1:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 3.0.6
+      fast-uri: 3.1.0
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
@@ -4542,8 +4449,6 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.4.1: {}
-
   chalk@5.6.2: {}
 
   chardet@0.7.0: {}
@@ -4613,10 +4518,10 @@ snapshots:
 
   comment-parser@1.4.1: {}
 
-  commitizen@4.3.1(@types/node@22.16.0)(typescript@5.9.3):
+  commitizen@4.3.1(@types/node@22.18.8)(typescript@5.9.3):
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@22.16.0)(typescript@5.9.3)
+      cz-conventional-changelog: 3.3.0(@types/node@22.18.8)(typescript@5.9.3)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -4665,11 +4570,11 @@ snapshots:
     dependencies:
       browserslist: 4.26.3
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@22.16.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@22.18.8)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 22.16.0
+      '@types/node': 22.18.8
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      jiti: 2.4.2
+      jiti: 2.6.1
       typescript: 5.9.3
 
   cosmiconfig@9.0.0(typescript@5.9.3):
@@ -4689,16 +4594,16 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  cz-conventional-changelog@3.3.0(@types/node@22.16.0)(typescript@5.9.3):
+  cz-conventional-changelog@3.3.0(@types/node@22.18.8)(typescript@5.9.3):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.1(@types/node@22.16.0)(typescript@5.9.3)
+      commitizen: 4.3.1(@types/node@22.18.8)(typescript@5.9.3)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.8.1(@types/node@22.16.0)(typescript@5.9.3)
+      '@commitlint/load': 20.1.0(@types/node@22.18.8)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -4762,7 +4667,7 @@ snapshots:
 
   detect-indent@6.1.0: {}
 
-  detect-indent@7.0.1: {}
+  detect-indent@7.0.2: {}
 
   detect-newline@4.0.1: {}
 
@@ -4803,7 +4708,7 @@ snapshots:
 
   environment@1.1.0: {}
 
-  error-ex@1.3.2:
+  error-ex@1.3.4:
     dependencies:
       is-arrayish: 0.2.1
 
@@ -5211,7 +5116,7 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fast-uri@3.0.6: {}
+  fast-uri@3.1.0: {}
 
   fastq@1.19.1:
     dependencies:
@@ -5220,10 +5125,6 @@ snapshots:
   fd-package-json@2.0.0:
     dependencies:
       walk-up-path: 4.0.0
-
-  fdir@6.4.6(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
 
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
@@ -5292,7 +5193,7 @@ snapshots:
     dependencies:
       at-least-node: 1.0.0
       graceful-fs: 4.2.11
-      jsonfile: 6.1.0
+      jsonfile: 6.2.0
       universalify: 2.0.1
 
   fs.realpath@1.0.0: {}
@@ -5466,9 +5367,6 @@ snapshots:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
-
-  import-meta-resolve@4.1.0:
-    optional: true
 
   import-meta-resolve@4.2.0: {}
 
@@ -5694,8 +5592,6 @@ snapshots:
 
   jiti@1.21.7: {}
 
-  jiti@2.4.2: {}
-
   jiti@2.6.1: {}
 
   js-tokens@4.0.0: {}
@@ -5720,7 +5616,7 @@ snapshots:
 
   json5@2.2.3: {}
 
-  jsonfile@6.1.0:
+  jsonfile@6.2.0:
     dependencies:
       universalify: 2.0.1
     optionalDependencies:
@@ -5739,10 +5635,10 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@5.64.1(@types/node@22.16.0)(typescript@5.9.3):
+  knip@5.64.1(@types/node@22.18.8)(typescript@5.9.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
-      '@types/node': 22.16.0
+      '@types/node': 22.18.8
       fast-glob: 3.3.3
       formatly: 0.3.0
       jiti: 2.6.1
@@ -6034,7 +5930,7 @@ snapshots:
   parse-json@5.2.0:
     dependencies:
       '@babel/code-frame': 7.27.1
-      error-ex: 1.3.2
+      error-ex: 1.3.4
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
 
@@ -6058,8 +5954,6 @@ snapshots:
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
-
-  picomatch@4.0.2: {}
 
   picomatch@4.0.3: {}
 
@@ -6136,18 +6030,18 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.18(prettier@3.6.2):
+  prettier-plugin-packagejson@2.5.19(prettier@3.6.2):
     dependencies:
       sort-package-json: 3.4.0
-      synckit: 0.11.8
+      synckit: 0.11.11
     optionalDependencies:
       prettier: 3.6.2
 
-  prettier-plugin-tailwindcss@0.6.13(prettier@3.6.2):
+  prettier-plugin-tailwindcss@0.6.14(prettier@3.6.2):
     dependencies:
       prettier: 3.6.2
 
-  prettier-plugin-toml@2.0.5(prettier@3.6.2):
+  prettier-plugin-toml@2.0.6(prettier@3.6.2):
     dependencies:
       '@taplo/lib': 0.5.0
       prettier: 3.6.2
@@ -6396,13 +6290,13 @@ snapshots:
 
   sort-package-json@3.4.0:
     dependencies:
-      detect-indent: 7.0.1
+      detect-indent: 7.0.2
       detect-newline: 4.0.1
       git-hooks-list: 4.1.1
       is-plain-obj: 4.1.0
       semver: 7.7.2
       sort-object-keys: 1.1.3
-      tinyglobby: 0.2.14
+      tinyglobby: 0.2.15
 
   source-map-js@1.2.1: {}
 
@@ -6532,10 +6426,6 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.9
 
-  synckit@0.11.8:
-    dependencies:
-      '@pkgr/core': 0.2.7
-
   tailwind-csstree@0.1.4: {}
 
   tailwindcss@3.4.11:
@@ -6580,11 +6470,6 @@ snapshots:
   through@2.3.8: {}
 
   tinyexec@1.0.1: {}
-
-  tinyglobby@0.2.14:
-    dependencies:
-      fdir: 6.4.6(picomatch@4.0.2)
-      picomatch: 4.0.2
 
   tinyglobby@0.2.15:
     dependencies:
