@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/touchspot/prettier-config/compare/v2.0.0...v2.0.1) (2025-10-03)
+
+
+### Bug Fixes
+
+* update prettier plugin dependencies ([66f5c04](https://github.com/touchspot/prettier-config/commit/66f5c04ef11df0c4b762d9cea68ad763ae0a2371))
+
 ## [2.0.0](https://github.com/touchspot/prettier-config/compare/v1.1.0...v2.0.0) (2025-07-07)
 
 
