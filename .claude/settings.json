@@ -5,5 +5,15 @@
 	"statusLine": {
 		"type": "command",
 		"command": "ccusage statusline"
+	},
+	"permissions": {
+		"allow": [
+			"Bash(git diff:*)",
+			"Bash(git log:*)",
+			"Bash(git status:*)",
+			"Bash(git commit:*)",
+			"Bash(pnpm exec:*)"
+		],
+		"deny": ["Bash(npx:*)"]
 	}
 }
