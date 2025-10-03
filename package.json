@@ -38,9 +38,9 @@
 		"prettier-plugin-toml": "^2.0.5"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.8.1",
-		"@commitlint/config-conventional": "^19.8.1",
-		"@commitlint/config-pnpm-scopes": "^19.8.1",
+		"@commitlint/cli": "^20.1.0",
+		"@commitlint/config-conventional": "^20.0.0",
+		"@commitlint/config-pnpm-scopes": "^20.1.0",
 		"@touchspot/eslint-config": "^1.7.1",
 		"@tsconfig/node22": "^22.0.2",
 		"@tsconfig/strictest": "^2.0.5",
