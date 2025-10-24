@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/touchspot/prettier-config/compare/v3.0.1...v3.0.2) (2025-10-24)
+
+
+### Bug Fixes
+
+* bundle type declarations ([52a2159](https://github.com/touchspot/prettier-config/commit/52a2159887cf2af7d20c80716534aec62e6073e9))
+
 ## [3.0.1](https://github.com/touchspot/prettier-config/compare/v3.0.0...v3.0.1) (2025-10-24)
 
 
