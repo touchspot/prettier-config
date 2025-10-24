@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/touchspot/prettier-config/compare/v2.0.1...v3.0.0) (2025-10-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* require `.js` config for tailwindcss preset to provide entrypoint info with plugin
+
+### Features
+
+* enable `experimentalTernaries` ([b5e26ff](https://github.com/touchspot/prettier-config/commit/b5e26ff7b8a21bf58d182a2497168d0db36850bd))
+
+
+### Bug Fixes
+
+* require `.js` config for tailwindcss preset ([55f8bfe](https://github.com/touchspot/prettier-config/commit/55f8bfe9ece4c0fbb8b9f20d0ab88ecbcf134aec))
+
 ## [2.0.1](https://github.com/touchspot/prettier-config/compare/v2.0.0...v2.0.1) (2025-10-03)
 
 
