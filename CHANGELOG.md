@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/touchspot/prettier-config/compare/v3.0.0...v3.0.1) (2025-10-24)
+
+
+### Bug Fixes
+
+* upgrade `prettier-plugin-tailwindcss` ([7078c84](https://github.com/touchspot/prettier-config/commit/7078c84126f6a71027f79f4ec61c46a8309dadd7))
+
 ## [3.0.0](https://github.com/touchspot/prettier-config/compare/v2.0.1...v3.0.0) (2025-10-24)
 
 
