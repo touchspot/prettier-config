@@ -14,15 +14,21 @@
 	},
 	"type": "module",
 	"exports": {
-		".": "./dist/default.js",
-		"./tailwindcss": "./dist/tailwindcss.js"
+		".": {
+			"types": "./dist/default.d.ts",
+			"default": "./dist/default.js"
+		},
+		"./tailwindcss": {
+			"types": "./dist/tailwindcss.d.ts",
+			"default": "./dist/tailwindcss.js"
+		}
 	},
 	"files": [
 		"dist",
 		"package.json"
 	],
 	"scripts": {
-		"build": "pkgroll",
+		"build": "tsc",
 		"check:format": "prettier --check .",
 		"check:lint": "eslint .",
 		"check:type": "tsc --noEmit",
@@ -51,7 +57,6 @@
 		"husky": "^9.1.7",
 		"knip": "^5.66.2",
 		"lint-staged": "^16.2.6",
-		"pkgroll": "^2.20.1",
 		"prettier": "^3.6.2",
 		"turbo": "^2.5.8",
 		"typescript": "^5.9.3"
