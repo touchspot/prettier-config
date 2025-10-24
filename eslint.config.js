@@ -1,7 +1,7 @@
 import config, { env } from "@touchspot/eslint-config";
 
 export default [
-	...config(),
+	...config({ tsconfigRootDir: import.meta.dirname }),
 	...env.node(),
 	{
 		rules: {
