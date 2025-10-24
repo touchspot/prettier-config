@@ -1,28 +1,29 @@
 import type { Config } from "prettier";
 import type * as TailwindCss from "prettier-plugin-tailwindcss";
 
-import config from "./default.js";
+import defaultConfig from "./default.js";
 
-const { plugins, ...defaultOptions } = config;
+export default function config(options: TailwindCss.PluginOptions): Config {
+	const tailwindCssOptions: TailwindCss.PluginOptions = {
+		...options,
+		tailwindFunctions: options.tailwindFunctions ?? [
+			"classnames",
+			"clsx",
+			"cn",
+			"ctl",
+			"cva",
+			"twJoin",
+			"twMerge",
+			"tv",
+		],
+	};
 
-const tailwindCssOptions: TailwindCss.PluginOptions = {
-	tailwindFunctions: [
-		"classnames",
-		"clsx",
-		"cn",
-		"ctl",
-		"cva",
-		"twJoin",
-		"twMerge",
-		"tv",
-	],
-};
-
-export default {
-	...defaultOptions,
-	plugins: [
-		...plugins,
-		new URL(import.meta.resolve("prettier-plugin-tailwindcss")).pathname,
-	],
-	...tailwindCssOptions,
-} satisfies Config;
+	return {
+		...defaultConfig,
+		plugins: [
+			...defaultConfig.plugins,
+			new URL(import.meta.resolve("prettier-plugin-tailwindcss")).pathname,
+		],
+		...tailwindCssOptions,
+	};
+}
