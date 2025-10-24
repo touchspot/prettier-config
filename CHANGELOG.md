@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/touchspot/prettier-config/compare/v3.0.2...v3.0.3) (2025-10-24)
+
+
+### Reverts
+
+* disable experimentalTernaries ([15b0af7](https://github.com/touchspot/prettier-config/commit/15b0af7ebc5e75a6d0bda681733d651a795fbb19))
+
 ## [3.0.2](https://github.com/touchspot/prettier-config/compare/v3.0.1...v3.0.2) (2025-10-24)
 
 
