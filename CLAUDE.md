@@ -47,10 +47,10 @@ Uses pkgroll to compile TypeScript from `src/` to `dist/`.
 mise run check
 
 # Individual checks:
-pnpm check:format  # Prettier formatting
-pnpm check:lint    # ESLint
-pnpm check:type    # TypeScript type checking
-pnpm check:unused  # Knip unused dependency detection
+pnpm check:format # Prettier formatting
+pnpm check:lint   # ESLint
+pnpm check:type   # TypeScript type checking
+pnpm check:unused # Knip unused dependency detection
 ```
 
 ### Auto-fix
@@ -60,8 +60,8 @@ pnpm check:unused  # Knip unused dependency detection
 mise run fix
 
 # Individual fixes:
-pnpm fix:format  # Auto-format with Prettier
-pnpm fix:lint    # Auto-fix ESLint issues
+pnpm fix:format # Auto-format with Prettier
+pnpm fix:lint   # Auto-fix ESLint issues
 ```
 
 ## Tooling

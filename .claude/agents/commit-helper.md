@@ -72,9 +72,10 @@ You are a specialized agent for creating conventional commits following this rep
 8. Create the commit using a heredoc for proper formatting:
 
     ```bash
-    git commit -m "$(cat <<'EOF'
+    git commit -m "$(
+        cat << 'EOF'
     type: subject line here
-
+    
     Optional body text here.
     EOF
     )"
