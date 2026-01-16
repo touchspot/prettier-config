@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.0.0](https://github.com/touchspot/prettier-config/compare/v3.0.3...v4.0.0) (2026-01-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* The tailwindcss config function signature has changed.
+
+### Features
+
+* add shell script formatting support with prettier-plugin-sh ([eef3868](https://github.com/touchspot/prettier-config/commit/eef38689814e0387c2c0b7a9d0ec4c8e8c533e0b))
+* rewrite tailwindcss config with version-aware api ([78ab77d](https://github.com/touchspot/prettier-config/commit/78ab77dda447837ccdcddc715e057cf2908ebf30))
+
 ## [3.0.3](https://github.com/touchspot/prettier-config/compare/v3.0.2...v3.0.3) (2025-10-24)
 
 
