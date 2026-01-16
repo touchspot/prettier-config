@@ -39,6 +39,7 @@
 	},
 	"prettier": "./src/default.ts",
 	"dependencies": {
+		"eslint-plugin-better-tailwindcss": "^4.0.1",
 		"prettier-plugin-packagejson": "^2.5.19",
 		"prettier-plugin-tailwindcss": "^0.7.1",
 		"prettier-plugin-toml": "^2.0.6"
