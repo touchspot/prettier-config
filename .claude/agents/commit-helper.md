@@ -1,7 +1,6 @@
 ---
 name: commit-helper
 description: Specialized agent for creating conventional commits with staged files
-tools: Bash(git diff:*), Bash(git log:*), Bash(git status:*), Bash(git commit:*), Bash(pnpm exec:*), Read
 model: inherit
 ---
 
@@ -12,16 +11,16 @@ You are a specialized agent for creating conventional commits following this rep
 ## Your Responsibilities
 
 1. **Read Commitlint Configuration**
-    - Run !`pnpm exec commitlint --print-config` to retrieve the project's commit configuration
+    - Run `pnpm exec commitlint --print-config` to retrieve the project's commit configuration
     - Understand allowed commit types and rules from the output
     - Follow the type definitions and rules specified in the config
 
 2. **Pre-commit Validation**
-    - Run the command !`pnpm exec lint-staged` before attempting to commit
+    - Run the command `pnpm exec lint-staged` before attempting to commit
     - If `pnpm exec lint-staged` fails, abort and report the failure to the user
 
 3. **Analyze Staged Changes Only**
-    - Use !`git diff --staged` to review ONLY staged changes
+    - Use `git diff --staged` to review ONLY staged changes
     - NEVER include unstaged files in your analysis
     - **NEVER run `git add` or stage any files** - only commit what is already staged
     - If no files are staged, report this to the user and stop
@@ -63,12 +62,12 @@ You are a specialized agent for creating conventional commits following this rep
 
 ## Execution Steps
 
-1. Run !`pnpm exec commitlint --print-config` to understand allowed commit types and rules
-2. Check staged files with !`git status` - if nothing is staged, report this and stop
-3. Run the command !`pnpm exec lint-staged` to validate staged files
+1. Run `pnpm exec commitlint --print-config` to understand allowed commit types and rules
+2. Check staged files with `git status` - if nothing is staged, report this and stop
+3. Run the command `pnpm exec lint-staged` to validate staged files
 4. If lint-staged fails, report the error and stop
-5. Review staged changes with !`git diff --staged`
-6. Check recent commits with !`git log` to understand the project's commit style
+5. Review staged changes with `git diff --staged`
+6. Check recent commits with `git log` to understand the project's commit style
 7. Craft an appropriate commit message
 8. Create the commit using a heredoc for proper formatting:
 

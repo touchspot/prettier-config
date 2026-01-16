@@ -1,19 +1,85 @@
 {
-	"$schema": "https://json.schemastore.org/claude-code-settings.json",
+	"respectGitignore": true,
+	"attribution": {
+		"commit": "",
+		"pr": ""
+	},
+	"permissions": {
+		"allow": [
+			"Read",
+			"Write",
+			"Edit",
+			"Bash",
+			"Glob",
+			"Grep",
+			"WebFetch",
+			"WebSearch",
+			"Task",
+			"Skill"
+		],
+		"deny": [
+			"Read(/**/.env*)",
+			"Write(/**/node_modules/**)",
+			"Edit(/**/node_modules/**)",
+			"Write(/**/*prettier*)",
+			"Edit(/**/*prettier*)",
+			"Write(/**/*eslint*)",
+			"Edit(/**/*eslint*)",
+			"Write(/**/tsconfig.*)",
+			"Edit(/**/tsconfig.*)",
+			"Write(/.husky/**)",
+			"Edit(/.husky/**)",
+			"Bash(sudo:*)",
+			"Bash(docker system:*)",
+			"Bash(git push:*)",
+			"Bash(git reset:*)",
+			"Bash(git clean:*)",
+			"Bash(git checkout:*)",
+			"Bash(git stash drop:*)",
+			"Bash(git stash clear:*)",
+			"Bash(git filter-branch:*)",
+			"Bash(git rebase:*)",
+			"Bash(git config:*)",
+			"Bash(git gc:*)",
+			"Bash(git reflog expire:*)",
+			"Bash(npm:*)",
+			"Bash(npx:*)",
+			"Bash(pnpx:*)",
+			"Bash(pnpm dlx:*)",
+			"Bash(pnpm publish:*)"
+		],
+		"defaultMode": "plan",
+		"disableBypassPermissionsMode": "disable"
+	},
 	"enableAllProjectMcpServers": true,
-	"includeCoAuthoredBy": false,
+	"hooks": {
+		"SessionStart": [
+			{
+				"hooks": [
+					{
+						"type": "command",
+						"command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/inject-mise-env.sh",
+						"timeout": 30
+					}
+				]
+			}
+		]
+	},
 	"statusLine": {
 		"type": "command",
 		"command": "ccusage statusline"
 	},
-	"permissions": {
-		"allow": [
-			"Bash(git diff:*)",
-			"Bash(git log:*)",
-			"Bash(git status:*)",
-			"Bash(git commit:*)",
-			"Bash(pnpm exec:*)"
-		],
-		"deny": ["Bash(npx:*)"]
-	}
+	"enabledPlugins": {
+		"code-review@claude-plugins-official": true,
+		"feature-dev@claude-plugins-official": true,
+		"security-guidance@claude-plugins-official": true,
+		"code-simplifier@claude-plugins-official": true
+	},
+	"sandbox": {
+		"enabled": true,
+		"autoAllowBashIfSandboxed": true,
+		"allowUnsandboxedCommands": false,
+		"excludedCommands": ["git:*", "pnpm:*", "turbo:*"]
+	},
+	"alwaysThinkingEnabled": true
 }
