@@ -48,6 +48,7 @@
 		"@commitlint/cli": "^20.1.0",
 		"@commitlint/config-conventional": "^20.0.0",
 		"@commitlint/config-pnpm-scopes": "^20.1.0",
+		"@commitlint/types": "^20.3.1",
 		"@touchspot/eslint-config": "^3.0.3",
 		"@tsconfig/node24": "^24.0.4",
 		"@tsconfig/strictest": "^2.0.6",
